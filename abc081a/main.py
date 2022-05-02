@@ -18,4 +18,9 @@ l = list(map(int, input().split()))
 その他
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
-
+l = list(input())
+count = 0
+for elm in l:
+    if elm == "1":
+        count += 1
+print(count)
