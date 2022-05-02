@@ -18,4 +18,12 @@ l = list(map(int, input().split()))
 その他
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
-
+a, b = list(map(int, input().split()))
+is_odd = True
+calced = (a*b) % 2
+if calced == 0:
+    is_odd = False
+if is_odd is True:
+    print("Odd")
+else:
+    print("Even")
