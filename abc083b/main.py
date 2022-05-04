@@ -19,3 +19,11 @@ l = list(map(int, input().split()))
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
 
+N, A, B = list(map(int, input().split()))
+ans = 0
+for n in range(1, N+1):
+    n_list = [int(s) for s in str(n)]
+    _sum = sum(n_list)
+    if _sum >= A and _sum <= B:
+        ans += n
+print(ans)
