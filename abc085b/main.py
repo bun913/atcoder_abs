@@ -19,3 +19,9 @@ l = list(map(int, input().split()))
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
 
+N = int(input())
+s = set()
+for n in range(N):
+    i = int(input())
+    s.add(i)
+print(len(s))
