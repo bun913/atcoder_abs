@@ -19,3 +19,15 @@ l = list(map(int, input().split()))
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
 
+N = int(input())
+l = list(map(int, input().split()))
+_sorted = sorted(l, reverse=True)
+alice = 0
+bob = 0
+for i, n in enumerate(_sorted):
+    is_alice = i % 2 == 0
+    if is_alice:
+        alice += n
+    else:
+        bob += n
+print(alice-bob)
