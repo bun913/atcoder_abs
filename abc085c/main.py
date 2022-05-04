@@ -19,3 +19,15 @@ l = list(map(int, input().split()))
 https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
 """
 
+N, Y = list(map(int, input().split()))
+ans = "-1 -1 -1"
+# 10,000円の数
+for a in range(N+1):
+    # 5,000円の数
+    for b in range(N+1-a):
+        c = N - a - b
+        s = (10000*a) + (5000*b) + (c*1000)
+        if s == Y:
+            ans = "{} {} {}".format(a, b, c)
+            break
+print(ans)
